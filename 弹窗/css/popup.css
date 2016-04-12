@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.popupBox {
+  position: fixed;
+  z-index: 100;
+  display: none;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.4); }
+  .popupBox.show {
+    display: block; }
+  .popupBox .dialog {
+    position: relative;
+    top: 50%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: rgba(253, 253, 253, 0.95);
+    border-radius: 6px; }
+  .popupBox .dialogTitle {
+    padding: 10px;
+    border-bottom: 1px solid #e6e6e6; }
+  .popupBox .dialogTitle h3 {
+    text-align: center; }
+  .popupBox .popup-close {
+    float: right;
+    margin-top: -55px; }
+  .popupBox .popup-close:before {
+    font-size: 46px;
+    color: #00a5e0;
+    cursor: pointer;
+    content: "\00D7"; }
+  .popupBox .dialogContent {
+    padding: 18px; }
+  .popupBox .dialogContent .contTitle {
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center; }
+    .popupBox .dialogContent .content {
+    font-size: 12px;
+    text-align: center; }
+  .popupBox .dialogChoose button {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    outline: none; }
+    .popupBox .dialogChoose button:nth-child(2) {
+      border-left: 1px solid #e6e6e6; }
+  .popupBox .dialogChoose button.alone {
+    width: 99%; }

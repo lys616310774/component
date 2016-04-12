@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--兼容IE8-->
+<meta name="component" content="popup">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><!--兼容移动设备-->
+<title>弹窗组件</title>
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="./css/popup.css">
+</head>
+<body>
+<!-- <div class="popupBox show">
+    <div class="dialog" style="">
+        <div class="dialogTitle">
+            <h3></h3>
+            <span class="popup-close"></span>
+        </div>
+        <div class="dialogContent">
+            <ul class="questions">
+                <li class="qt qn">
+                    <div class="contTitle"></div>
+                    <div class="content"></div>
+                </li>
+                <li class="qt">
+                    <div class="contTitle"></div>
+                    <div class="content"></div>
+                </li>
+                <li class="qt">
+                    <div class="contTitle"></div>
+                    <div class="content"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="dialogChoose">
+            <button></button>
+            <button></button>
+        </div>
+    </div>
+</div> -->
+</body>
+<script src="./js/jquery-2.1.4.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/popup.js"></script>
+<script type="text/javascript">
+    new popupBox({
+        title:"请回答以下问题",
+        cntTitle:"题目1",
+        cntBody:"你在认真学习吗？",
+        /*quesTitle:["题目1","题目2"],
+        quesBody:["你在认真学习吗？","你在认真做题吗？"],*/
+        btnChoose:["确定","取消"]
+    });
+</script>
+</html>
